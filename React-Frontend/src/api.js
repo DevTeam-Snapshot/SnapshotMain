@@ -1,7 +1,7 @@
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:9000';
 
 export async function askQuestion(question, index) {
-  const response = await fetch(`${API_BASE_URL}/api/integration-test`, {
+  const response = await fetch('/api/integration-test', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ question, index }),
