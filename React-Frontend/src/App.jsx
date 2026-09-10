@@ -25,7 +25,7 @@ export default function App() {
 
   return (
     <main className="app">
-      <h1>로컬 AI 연동 테스트</h1>
+      <h1>AI 서비스 연동 테스트 배포</h1>
       <form onSubmit={submitMessage}>
         <label htmlFor="question-input">질문</label>
         <input id="question-input" value={input} onChange={(event) => setInput(event.target.value)} placeholder="안녕" minLength={1} maxLength={1000} required />
