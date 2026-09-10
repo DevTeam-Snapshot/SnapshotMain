@@ -8,4 +8,5 @@ FastAPI -> postgre.env 및 .env
 React -> .env  
 vLLM -> .env  
 
-## 연동 테스트까지 작성되어 있으며, 연동 테스트한 프로젝트의 배포까지 업데이트 중입니다.
+# SnapshotMain v0-zeroground  
+연동테스트 배포 완료 (2026-09-10)
