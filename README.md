@@ -10,3 +10,7 @@ vLLM -> .env
 
 # SnapshotMain v0-zeroground  
 연동테스트 배포 완료 (2026-09-10)
+
+# SnapshotMain v1-core
+광고 이미지 생성 기능 추가 (2026-09-11)
+  - 이미지 폴더를 FastAPI 내부에서 관리합니다.
