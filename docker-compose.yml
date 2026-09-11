@@ -20,16 +20,12 @@ services:
     build:
       context: ./vLLM-Model
       dockerfile: Dockerfile.grpc
-    image: hotel-vllm-grpc:0.1.0
+    image: hotel-ad-image-api:latest
     container_name: vllm-grpc
     ports:
       - "127.0.0.1:15051:50051"
-    gpus: all
-    ipc: host
-    environment:
-      - HF_TOKEN=${HF_TOKEN}
-    volumes:
-      - hf-cache:/root/.cache/huggingface
+    env_file:
+      - ./vLLM-Model/.env
 
   # 3. FastAPI 백엔드
   backend:
@@ -42,7 +38,8 @@ services:
       - ./FastAPI-Backend/.env
     environment:
       DB_HOST: postgres
-      VLLM_GRPC_HOST: vllm-grpc:50051
+      IMAGE_STORAGE_DIR: /app/Image
+      MODEL_GRPC_TARGET: llm-service:50051   # 이 줄 추가
     ports:
       - "127.0.0.1:9000:8000"
     depends_on:
@@ -54,6 +51,8 @@ services:
       - |
         alembic upgrade head &&
         uvicorn app.main:app --host 0.0.0.0 --port 8000
+    volumes:
+      - ./FastAPI-Backend/Image:/app/Image
 
   # 4. React 개발 서버
   react-dev:

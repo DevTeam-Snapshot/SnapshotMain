@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="숙소 사진과 소개 글을 올리면 광고 이미지를 만들어주는 서비스, 스테이프레임" />
+
+  <title>스테이프레임 | 숙소 광고 이미지 생성</title>
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- bootstrap core css (grid / form 요소만 활용, 색상·타이포는 style.css에서 재정의) -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- custom design -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- ========== 헤더 ========== -->
+  <header class="sf-header">
+    <nav class="navbar navbar-expand-lg container sf-nav">
+      <a class="navbar-brand sf-brand" href="#top">
+        스테이프레임<span class="sf-brand-dot">.</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sfNav" aria-controls="sfNav" aria-expanded="false" aria-label="메뉴 열기">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="sfNav">
+        <ul class="navbar-nav sf-nav-links align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#how">이용 방법</a></li>
+          <li class="nav-item"><a class="nav-link" href="#submit">신청하기</a></li>
+          <li class="nav-item"><a class="nav-link" href="#examples">완성 예시</a></li>
+          <li class="nav-item">
+            <a class="sf-btn sf-btn-primary sf-btn-sm" href="#submit">만들어보기</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========== 히어로 ========== -->
+  <section class="sf-hero" id="top">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1 class="sf-h1">숙소 사진 한 장,<br />광고 이미지 한 장</h1>
+          <p class="sf-lead">
+            가지고 계신 사진과 숙소 소개 글만 올려주시면, 예약을 부르는 광고 이미지로 바꿔드립니다.
+            디자인을 몰라도, 사진을 다시 찍지 않아도 괜찮습니다.
+          </p>
+          <a href="#submit" class="sf-btn sf-btn-primary">지금 만들어보기</a>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="sf-hero-visual">
+            <div class="sf-photo-card sf-photo-raw">
+              <div class="sf-photo-fill sf-fill-1"></div>
+              <span class="sf-photo-tag">올린 사진</span>
+            </div>
+            <div class="sf-photo-card sf-photo-result">
+              <div class="sf-photo-fill sf-fill-2"></div>
+              <div class="sf-result-copy">
+                <p class="sf-result-headline">가을이 머무는 창가,<br />숲속펜션</p>
+                <span class="sf-result-cta">지금 예약하기</span>
+              </div>
+              <span class="sf-photo-tag sf-photo-tag-dark">완성된 광고</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 이용 방법 ========== -->
+  <section class="sf-steps" id="how">
+    <div class="container">
+      <h2 class="sf-h2">이용 방법</h2>
+      <div class="row sf-steps-row">
+        <div class="col-md-4 sf-step">
+          <span class="sf-step-num">1</span>
+          <h3 class="sf-step-title">소개 글과 사진 올리기</h3>
+          <p class="sf-step-desc">숙소 이름, 유형, 특징을 적고 대표 사진을 함께 올립니다.</p>
+        </div>
+        <div class="col-md-4 sf-step">
+          <span class="sf-step-num">2</span>
+          <h3 class="sf-step-title">AI가 초안을 구성합니다</h3>
+          <p class="sf-step-desc">입력한 글과 사진을 분석해 어울리는 문구와 구도를 만듭니다.</p>
+        </div>
+        <div class="col-md-4 sf-step">
+          <span class="sf-step-num">3</span>
+          <h3 class="sf-step-title">완성된 이미지 받기</h3>
+          <p class="sf-step-desc">바로 게시할 수 있는 광고 이미지를 확인하고 내려받습니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 신청 폼 ========== -->
+  <section class="sf-submit" id="submit">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 sf-submit-note">
+          <h2 class="sf-h2 sf-h2-light">이렇게 올리면<br />더 잘 나와요</h2>
+          <ul class="sf-tip-list">
+            <li>참고 설명은 구체적으로 적을수록 좋아요.</li>
+            <li>참고 이미지는 광고의 분위기나 배경으로 활용됩니다.</li>
+            <li>참고 이미지는 1장만 첨부할 수 있습니다.</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-7">
+          <form class="sf-form" novalidate>
+            <div class="form-group">
+              <label for="sfDesc">광고 제작 시 참고 설명</label>
+              <textarea class="form-control sf-input sf-textarea" id="sfDesc" name="sfDesc" rows="5" placeholder="광고 이미지에 담고 싶은 내용을 자유롭게 적어주세요. 예: 가을 단풍이 보이는 창가, 숲속펜션 - 지금 예약하기"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="sfPhoto">광고 제작 시 참고 이미지 <span class="sf-label-sub">(1장)</span></label>
+              <label class="sf-image-add" for="sfPhoto" id="sfImageAdd">
+                <span class="sf-image-add-icon" id="sfImageAddIcon">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1.5" y="1.5" width="21" height="21" rx="2" stroke="currentColor" stroke-width="1.5" />
+                    <circle cx="8" cy="9" r="1.8" stroke="currentColor" stroke-width="1.5" />
+                    <path d="M2.5 17.5L8 12.5L11.5 15.5L16 10.5L21.5 16" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </label>
+              <input type="file" id="sfPhoto" name="sfPhoto" accept="image/*" class="sf-file-input" />
+            </div>
+
+            <button type="submit" class="sf-btn sf-btn-primary sf-btn-block" id="sfSubmitBtn">
+              광고 이미지 생성하기
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 완성 예시 ========== -->
+  <section class="sf-examples" id="examples">
+    <div class="container">
+      <h2 class="sf-h2">완성 예시</h2>
+      <div class="row sf-examples-row">
+        <div class="col-md-4">
+          <div class="sf-example-card">
+            <div class="sf-photo-fill sf-fill-3"></div>
+            <div class="sf-result-copy">
+              <p class="sf-result-headline">계곡을 품은 4인실,<br />숲속펜션</p>
+              <span class="sf-result-cta">지금 예약하기</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="sf-example-card">
+            <div class="sf-photo-fill sf-fill-4"></div>
+            <div class="sf-result-copy">
+              <p class="sf-result-headline">혼자여도 좋은 밤,<br />온기게스트하우스</p>
+              <span class="sf-result-cta">지금 예약하기</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="sf-example-card">
+            <div class="sf-photo-fill sf-fill-5"></div>
+            <div class="sf-result-copy">
+              <p class="sf-result-headline">마루에 앉아 보는 별,<br />달빛한옥</p>
+              <span class="sf-result-cta">지금 예약하기</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 푸터 ========== -->
+  <footer class="sf-footer">
+    <div class="container sf-footer-row">
+      <span class="sf-brand sf-brand-footer">스테이프레임<span class="sf-brand-dot">.</span></span>
+      <p class="sf-footer-tagline">숙소를 한 프레임에 담습니다.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

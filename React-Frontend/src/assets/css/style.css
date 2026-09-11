@@ -1,0 +1,480 @@
+/* =========================================================
+   스테이프레임 — design tokens
+   숙박업 사장님들이 사진과 글을 올려 광고 이미지를 받는 서비스.
+   컨셉: 여행지의 저녁 볕이 담긴 편집숍 화보 느낌.
+   ink(깊은 소나무빛) + paper(모래빛) + brass(놋쇠빛 포인트)
+   ========================================================= */
+
+:root {
+  --ink: #20261f;
+  --ink-soft: #454e40;
+  --paper: #f1ead8;
+  --paper-2: #e6dcc0;
+  --brass: #c08a2e;
+  --brass-deep: #96691f;
+  --clay: #a85436;
+  --cream: #f6f1e4;
+  --line: rgba(32, 38, 31, 0.14);
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'IBM Plex Sans KR', 'IBM Plex Sans', -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background-color: var(--cream);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1140px;
+}
+
+/* ---------- 헤더 ---------- */
+.sf-header {
+  background-color: var(--cream);
+  border-bottom: 1px solid var(--line);
+}
+
+.sf-nav {
+  padding: 22px 15px;
+}
+
+.sf-brand {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.sf-brand-dot {
+  color: var(--brass);
+}
+
+.sf-nav-links {
+  gap: 28px;
+}
+
+.sf-nav-links .nav-link {
+  font-size: 15px;
+  color: var(--ink-soft);
+  padding: 6px 0;
+}
+
+.sf-nav-links .nav-link:hover {
+  color: var(--ink);
+}
+
+/* ---------- 버튼 ---------- */
+.sf-btn {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 15px;
+  padding: 13px 28px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.sf-btn-primary {
+  background-color: var(--ink);
+  color: var(--cream);
+}
+
+.sf-btn-primary:hover {
+  background-color: var(--brass-deep);
+  color: var(--cream);
+}
+
+.sf-btn-sm {
+  padding: 8px 18px;
+  font-size: 14px;
+  margin-left: 6px;
+}
+
+.sf-btn-block {
+  width: 100%;
+  text-align: center;
+  padding: 16px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ---------- 히어로 ---------- */
+.sf-hero {
+  padding: 90px 0 100px;
+}
+
+.sf-h1 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 1.25;
+  color: var(--ink);
+  margin-bottom: 22px;
+}
+
+.sf-lead {
+  font-size: 17px;
+  color: var(--ink-soft);
+  max-width: 40ch;
+  margin-bottom: 34px;
+}
+
+.sf-hero-visual {
+  position: relative;
+  padding: 20px 10px 10px 40px;
+}
+
+.sf-photo-card {
+  position: relative;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 0 18px 36px rgba(32, 38, 31, 0.16);
+}
+
+.sf-photo-raw {
+  width: 72%;
+  aspect-ratio: 4 / 3;
+  transform: rotate(-3deg);
+}
+
+.sf-photo-result {
+  width: 78%;
+  aspect-ratio: 4 / 3;
+  margin-left: auto;
+  margin-top: -14%;
+  transform: rotate(2deg);
+  border-bottom-right-radius: 26px;
+}
+
+.sf-photo-fill {
+  position: absolute;
+  inset: 0;
+}
+
+.sf-fill-1 {
+  background: linear-gradient(135deg, #c9b98f 0%, #8a9b7c 55%, #4f6350 100%);
+}
+
+.sf-fill-2 {
+  background: linear-gradient(160deg, #a8763f 0%, #6f4a2d 55%, #2d2016 100%);
+}
+
+.sf-fill-3 {
+  background: linear-gradient(150deg, #b9a06a 0%, #6a7f5c 60%, #33422f 100%);
+}
+
+.sf-fill-4 {
+  background: linear-gradient(150deg, #c98b63 0%, #8a5a44 60%, #3a2a22 100%);
+}
+
+.sf-fill-5 {
+  background: linear-gradient(150deg, #7c8ca0 0%, #465468 60%, #1f2733 100%);
+}
+
+.sf-photo-tag {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  background: var(--cream);
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 11px;
+  border-radius: 2px;
+}
+
+.sf-photo-tag-dark {
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.sf-result-copy {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  right: 20px;
+}
+
+.sf-result-headline {
+  font-family: var(--font-display);
+  font-size: 21px;
+  line-height: 1.35;
+  color: var(--cream);
+  margin-bottom: 12px;
+}
+
+.sf-result-cta {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink);
+  background: var(--brass);
+  padding: 6px 13px;
+  border-radius: 2px;
+}
+
+/* ---------- 이용 방법 ---------- */
+.sf-steps {
+  background-color: var(--ink);
+  color: var(--cream);
+  padding: 90px 0;
+}
+
+.sf-h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 30px;
+  margin-bottom: 52px;
+  color: var(--cream);
+}
+
+.sf-h2-light {
+  color: var(--ink);
+}
+
+.sf-steps-row {
+  row-gap: 40px;
+}
+
+.sf-step {
+  padding-right: 24px;
+}
+
+.sf-step-num {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 44px;
+  color: var(--brass);
+  line-height: 1;
+  margin-bottom: 18px;
+}
+
+.sf-step-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--cream);
+}
+
+.sf-step-desc {
+  font-size: 14.5px;
+  color: #c9c4b1;
+  max-width: 32ch;
+}
+
+/* ---------- 신청 폼 ---------- */
+.sf-submit {
+  background-color: var(--paper);
+  padding: 100px 0;
+}
+
+.sf-submit-note {
+  padding-right: 50px;
+  margin-bottom: 40px;
+}
+
+.sf-tip-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 26px;
+  border-left: 2px solid var(--brass);
+}
+
+.sf-tip-list li {
+  padding: 0 0 18px 20px;
+  font-size: 14.5px;
+  color: var(--ink-soft);
+}
+
+.sf-form {
+  background: var(--cream);
+  padding: 40px;
+  border-radius: 3px;
+  border: 1px solid var(--line);
+}
+
+.sf-form .form-group {
+  margin-bottom: 24px;
+}
+
+.sf-form label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.sf-label-sub {
+  font-weight: 400;
+  color: var(--ink-soft);
+}
+
+.sf-input.form-control {
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  background: #fff;
+  color: var(--ink);
+  padding: 11px 14px;
+  height: auto;
+  font-size: 15px;
+}
+
+.sf-input.form-control:focus {
+  border-color: var(--brass);
+  box-shadow: 0 0 0 3px rgba(192, 138, 46, 0.18);
+}
+
+.sf-textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.sf-file-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.sf-image-add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 108px;
+  height: 108px;
+  border: 1.5px dashed var(--line);
+  border-radius: 3px;
+  background: #fff;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.sf-image-add:hover {
+  border-color: var(--brass);
+}
+
+.sf-image-add-icon {
+  display: flex;
+  color: var(--ink-soft);
+}
+
+.sf-image-add-icon.sf-image-add-icon-hidden {
+  display: none;
+}
+
+/* ---------- 완성 예시 ---------- */
+.sf-examples {
+  background-color: var(--cream);
+  padding: 100px 0;
+}
+
+.sf-examples-row {
+  row-gap: 30px;
+}
+
+.sf-example-card {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 0 14px 28px rgba(32, 38, 31, 0.14);
+}
+
+.sf-example-card .sf-result-copy {
+  top: auto;
+  bottom: 22px;
+}
+
+/* ---------- 푸터 ---------- */
+.sf-footer {
+  background-color: var(--ink);
+  padding: 34px 0;
+}
+
+.sf-footer-row {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.sf-brand-footer {
+  color: var(--cream);
+  font-size: 17px;
+}
+
+.sf-footer-tagline {
+  color: #9aa08f;
+  font-size: 13.5px;
+  margin: 0;
+}
+
+/* ---------- 반응형 ---------- */
+@media (max-width: 991px) {
+  .sf-hero {
+    padding: 60px 0 70px;
+  }
+
+  .sf-h1 {
+    font-size: 34px;
+  }
+
+  .sf-hero-visual {
+    margin-top: 50px;
+    padding-left: 10px;
+  }
+
+  .sf-submit-note {
+    padding-right: 0;
+  }
+
+  .sf-form {
+    padding: 26px;
+  }
+
+  .sf-nav-links {
+    gap: 6px;
+    padding-top: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .sf-h1 {
+    font-size: 28px;
+  }
+
+  .sf-photo-raw,
+  .sf-photo-result {
+    width: 90%;
+  }
+}
+
+/* ---------- 접근성 ---------- */
+a:focus-visible,
+button:focus-visible,
+.sf-image-add:focus-within {
+  outline: 2px solid var(--brass);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
