@@ -5,7 +5,8 @@ Team Snapshot 프로젝트의 배포용 레포지토리
 
 시연영상 : https://drive.google.com/file/d/1LBIhv9L-WHfjjQY6E-9nPZ-0MpjjUKKA/view?usp=drive_link      
 
-협업일지 링크   
+협업일지 링크     
+
   이찬울 :  
   정서호 :  
   박종선 :   
