@@ -19,7 +19,7 @@ BackEnd Part (FastAPI, PostgreSQL) : 정서호,   https://github.com/DevTeam-Sna
 ServingModel Part (vLLM using gRPC) : 박종선,   https://github.com/DevTeam-Snapshot/vLLM-Model
 
 각 폴더 내부에는 프레임워크가 들어있으며, 각 폴더당 .env 파일을 생성하셔야 합니다.  
-.env.example 파일이 있으니, 이를 복붙하셔서 빈 필드를 채워주시기 바랍니다.  
+.env.example 파일이 있으니, 같은 위치에 .env를 생성하셔서 example 파일을 복붙하신 후 빈 필드를 채워주시기 바랍니다.  
 
 FastAPI -> postgre.env 및 .env  
 React -> .env  
