@@ -22,7 +22,14 @@ vLLM -> .env
 예를 들면, OpenAPI_Key를 발급하신 후 vLLM 폴더 내부 .env에 작성해주셔야 합니다.  
 
 # SnapshotMain v0-zeroground  
-연동테스트 배포 완료 (2026-09-10)
+연동 테스트 배포 완료 (2026-09-10)  
+
+구동 서버 목록  
+FrontEnd : React, Bootstrap(CDI Link를 통해 참조)  
+BackEnd : FastAPI, PostgreSQL
+ServingModel : vLLM (gRPC)
+
+<img width="1280" height="717" alt="image" src="https://github.com/user-attachments/assets/42216e7a-8442-464e-b24c-40892d110396" />
 
 # SnapshotMain v1-core
 광고 이미지 생성 기능 추가 (2026-09-11)
