@@ -42,7 +42,7 @@ vLLM의 Docker Image는 10~20GB나 되는 대용량이며, vLLM으로 모델을 
 
 구동 서버 목록  
 FrontEnd : React, Bootstrap(CDI Link를 통해 참조)  
-BackEnd : FastAPI, PostgreSQL
+BackEnd : FastAPI, PostgreSQL  
 ServingModel : vLLM (gRPC)
 
 <img width="1280" height="717" alt="image" src="https://github.com/user-attachments/assets/42216e7a-8442-464e-b24c-40892d110396" />  
