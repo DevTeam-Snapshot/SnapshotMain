@@ -31,7 +31,8 @@ ServingModel : vLLM (gRPC)
 
 <img width="1280" height="717" alt="image" src="https://github.com/user-attachments/assets/42216e7a-8442-464e-b24c-40892d110396" />  
 
-테스트 상세 과정  
+테스트 상세 과정    
+
   React 서버에서 유저가 언어모델에 대한 질문과 DB에서 값을 참조할 Index를 폼으로 작성 후 Submit, RestAPI Post 요청 ->
   FastAPI 서버에서 언어모델에 대한 질문에 대한 답변 vLLM에 gRPC로 요청 ->
   vLLM 서버에서 언어 모델이 질문에 대한 답변을 생성하여 FastAPI에 gRPC로 전달 ->  
@@ -50,13 +51,15 @@ ServingModel : vLLM (gRPC)
 
 <img width="883" height="383" alt="image" src="https://github.com/user-attachments/assets/dd6c8644-685d-45a8-8798-a3d92c33530e" />  
 
-유저가 폼을 작성하여 텍스트 데이터와 이미지를 Submit, FastAPI에 요청(Multipart/Form Data) ->  
-FastAPI 서버에서 vLLM에 gRPC로 광고 이미지 생성 요청 ->
-vllm 서버에서 OpenAPI ImageGen 토큰을 사용하여 광고 이미지를 생성한 후 API 서버로부터 생성된 광고 이미지를 FastAPI로 gRPC를 통해 응답 ->  
-FastAPI 서버에서 이미지를 이미지 폴더에 저장한 후, image url을 React로 응답 ->  
-React는 FastAPI 서버에서 응답한 URL을 참조하여 이미지 렌더링
+테스트 상세 과정 :  
 
-결과 : 테스트 성공 후 배포 완료  
+  유저가 폼을 작성하여 텍스트 데이터와 이미지를 Submit, FastAPI에 요청(Multipart/Form Data) ->  
+  FastAPI 서버에서 vLLM에 gRPC로 광고 이미지 생성 요청 ->
+  vllm 서버에서 OpenAPI ImageGen 토큰을 사용하여 광고 이미지를 생성한 후 API 서버로부터 생성된 광고 이미지를 FastAPI로 gRPC를 통해 응답 ->  
+  FastAPI 서버에서 이미지를 이미지 폴더에 저장한 후, image url을 React로 응답 ->  
+  React는 FastAPI 서버에서 응답한 URL을 참조하여 이미지 렌더링
+
+  결과 : 테스트 성공 후 배포 완료  
 
 # SnapshotMain v2-functions
 본격적인 디자인 템플릿 구성, MainPage, MakingAds, SelectAds 페이지로 구성됨  
