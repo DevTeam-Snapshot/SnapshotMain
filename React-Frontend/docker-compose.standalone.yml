@@ -1,0 +1,5 @@
+services:
+  react-dev:
+    network_mode: host
+    ports: !reset []
+    command: ["npm", "run", "dev", "--", "--port", "3000"]

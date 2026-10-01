@@ -60,6 +60,63 @@ class ImageStorage:
 
         return file_path, image_url
 
+    # UUID에 해당하는 원본 이미지 읽기
+    def read_original(
+            self,
+            generation_id: UUID
+    ) -> bytes:
+        generation_dir = (
+            self.requests_dir / str(generation_id)
+        )
+
+        if not generation_dir.exists():
+            raise FileNotFoundError(
+                "원본 이미지 폴더를 찾을 수 없습니다."
+            )
+
+        original_files = [
+            file_path
+            for file_path in generation_dir.iterdir()
+            if (
+                file_path.is_file()
+                and file_path.stem == "original"
+                and file_path.suffix.lower()
+                in {".jpg", ".jpeg", ".png", ".webp"}
+            )
+        ]
+
+        if len(original_files) != 1:
+            raise FileNotFoundError(
+                "정확한 원본 이미지 파일을 찾을 수 없습니다."
+            )
+
+        return original_files[0].read_bytes()
+
+        # UUID에 해당하는 원본 이미지가 정확히 한 개 있는지 확인
+    def has_original(
+        self,
+        generation_id: UUID,
+    ) -> bool:
+        generation_dir = (
+            self.requests_dir / str(generation_id)
+        )
+
+        if not generation_dir.is_dir():
+            return False
+
+        original_files = [
+            file_path
+            for file_path in generation_dir.iterdir()
+            if (
+                file_path.is_file()
+                and file_path.stem == "original"
+                and file_path.suffix.lower()
+                in {".jpg", ".jpeg", ".png", ".webp"}
+            )
+        ]
+
+        return len(original_files) == 1
+
     # 모델이 생성한 결과 이미지 저장
     def save_generated(
             self,
@@ -86,6 +143,24 @@ class ImageStorage:
         )
 
         return file_path, image_url
+
+    # UUID에 해당하는 생성 이미지 파일 경로 조회
+    def get_generated_path(
+            self,
+            generation_id: UUID,
+    ) -> Path:
+        file_path = (
+            self.results_dir
+            / str(generation_id)
+            / "generated.png"
+        )
+
+        if not file_path.is_file():
+            raise FileNotFoundError(
+                "생성된 광고 이미지 파일을 찾을 수 없습니다."
+            )
+
+        return file_path
 
     # 요청 UUID에 해당하는 원본 이미지 삭제
     def delete_original(

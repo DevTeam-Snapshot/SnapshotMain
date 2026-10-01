@@ -6,15 +6,23 @@
    ========================================================= */
 
 :root {
-  --ink: #20261f;
-  --ink-soft: #454e40;
-  --paper: #f1ead8;
   --paper-2: #e6dcc0;
   --brass: #c08a2e;
   --brass-deep: #96691f;
   --clay: #a85436;
   --cream: #f6f1e4;
-  --line: rgba(32, 38, 31, 0.14);
+
+  --ink:#22261f;
+  --ink-soft:#5b6154;
+  --line:#e4e2d8;
+  --paper:#fbfaf6;
+  --sage:#2f3b2a;
+  --sage-soft:#eef1e8;
+  --accent:#3f7d58;
+  --accent-soft:#e5efe4;
+  --bubble-bot:#f3f2ec;
+  --bubble-user:#2f3b2a;
+
 
   --font-display: 'Fraunces', Georgia, serif;
   --font-body: 'IBM Plex Sans KR', 'IBM Plex Sans', -apple-system, sans-serif;
@@ -24,12 +32,10 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: var(--font-body);
-  color: var(--ink);
-  background-color: var(--cream);
-  font-size: 16px;
-  line-height: 1.6;
+body{
+  font-family:'Pretendard', -apple-system, sans-serif;
+  background:var(--paper);
+  color:var(--ink);
 }
 
 a {

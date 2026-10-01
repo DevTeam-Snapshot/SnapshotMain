@@ -1,0 +1,4 @@
+services:
+  react-dev:
+    environment:
+      - VITE_API_TARGET=http://host.docker.internal:9000
