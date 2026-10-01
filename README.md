@@ -16,6 +16,8 @@ FastAPI -> postgre.env 및 .env
 React -> .env  
 vLLM -> .env  
 
+각 프로젝트 내부에는 .env.example 파일이 있으니, 이를 참고하셔서 .env의 내용을 작성해주세요.  
+
 # SnapshotMain v0-zeroground  
 연동테스트 배포 완료 (2026-09-10)
 
