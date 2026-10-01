@@ -14,7 +14,7 @@ Team Snapshot 프로젝트의 배포용 레포지토리
 ## 이 레포지토리는 하나의 기기에 여러 개의 서버를 구동하여 배포하는 것이 목적입니다.  
 레포지토리 내부의 폴더는 각 서버 파트 담당자들의 Github를 참조하여 구성되었습니다.  
 
-FrontEnd Part (React, Bootstrap) : 이찬울,  https://github.com/DevTeam-Snapshot/React-Frontend
+FrontEnd Part (React, Bootstrap) : 이찬울,  https://github.com/DevTeam-Snapshot/React-Frontend  
 BackEnd Part (FastAPI, PostgreSQL) : 정서호,   https://github.com/DevTeam-Snapshot/FastAPI-Backend  
 ServingModel Part (vLLM using gRPC) : 박종선,   https://github.com/DevTeam-Snapshot/vLLM-Model
 
