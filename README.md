@@ -1,14 +1,16 @@
 # SnapshotMain
 Team Snapshot 프로젝트의 배포용 레포지토리  
 
+보고서 : https://drive.google.com/file/d/1jGmdMH_gQnwLES2jzVgzYkgGcPTSIA8-/view?usp=drive_link  
+
 발표자료 : https://drive.google.com/file/d/1CSH2bcx5mMeGgoAJ4iF2AlhOhvaEzgtR/view?usp=drive_link   
 
-시연영상 : https://drive.google.com/file/d/1LBIhv9L-WHfjjQY6E-9nPZ-0MpjjUKKA/view?usp=drive_link      
+시연영상 : https://drive.google.com/file/d/1LBIhv9L-WHfjjQY6E-9nPZ-0MpjjUKKA/view?usp=drive_link       
 
 협업일지 링크     
 
   이찬울 :  
-  정서호 :  
+  정서호 :  https://docs.google.com/spreadsheets/d/1Va2l9G57q0sOdIxeBeakZoa7Ti242ujYEL34mB6W0GM/edit?pli=1&gid=580768231#gid=580768231
   박종선 :   
 
 ## 이 레포지토리는 하나의 기기에 여러 개의 서버를 구동하여 배포하는 것이 목적입니다.  
