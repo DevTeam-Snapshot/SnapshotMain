@@ -9,7 +9,7 @@ Team Snapshot 프로젝트의 배포용 레포지토리
 
 협업일지 링크     
 
-  이찬울 :  https://app.notion.com/p/3ed7149252b28074abeddcd9ada11a00
+  이찬울 :  https://app.notion.com/p/3ed7149252b28074abeddcd9ada11a00  
   정서호 :  https://docs.google.com/spreadsheets/d/1Va2l9G57q0sOdIxeBeakZoa7Ti242ujYEL34mB6W0GM/edit?pli=1&gid=580768231#gid=580768231
   박종선 :   
 
